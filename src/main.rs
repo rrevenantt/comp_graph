@@ -1,5 +1,10 @@
+// straightforward version that corresponds to the API of the example in task description
 mod comp_graph;
-// mod comp_graph2;
+// zero-allocation static dispatch version with heterogeneous nodes if the performance is critical
+// and graph is known beforehand
+mod comp_graph2;
+// most readable and maintainable arena-based version that is fast enough for most cases
+mod comp_graph3;
 
 use comp_graph::*;
 use std::ops::{Add, Mul};
